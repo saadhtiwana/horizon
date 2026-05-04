@@ -1,6 +1,6 @@
 # Horizon
 
-![Horizon demo](./src/assets/saad.png)
+![Horizon demo](demo.jpg)
 
 Horizon is a clean, professional personal-finance dashboard starter built with React + TypeScript, Vite, and a component-first design system. It provides a well-structured foundation to build data-driven dashboards, budgeting apps, and analytics tools.
 
