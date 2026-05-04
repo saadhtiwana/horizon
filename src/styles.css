@@ -1,0 +1,230 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Apple-style system font stack: SF Pro on Apple devices, Inter as web fallback */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter Tight",
+    "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:
+    "SF Mono", ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-subtle: var(--subtle);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dim: var(--primary-dim);
+  --color-primary-glow: var(--primary-glow);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-ring: var(--ring);
+
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--surface-2);
+  --color-popover-foreground: var(--foreground);
+  --color-secondary: var(--surface-2);
+  --color-secondary-foreground: var(--foreground);
+  --color-accent: var(--surface-2);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: var(--danger);
+  --color-destructive-foreground: var(--foreground);
+  --color-input: var(--surface-2);
+}
+
+:root {
+  /* Warm off-white paper canvas, ink-black foreground */
+  --background: #fafaf7;
+  --foreground: #0c0c0d;
+  --surface: #ffffff;
+  --surface-2: #f4f3ee;
+  --surface-3: #ebe9e2;
+  --border: #e6e3da;
+  --border-strong: #d4d0c4;
+  --muted: #f4f3ee;
+  --muted-foreground: #6b6862;
+  --subtle: #a8a49a;
+
+  --primary: #c2410c;
+  --primary-foreground: #ffffff;
+  --primary-dim: #9a3412;
+  --primary-glow: #ea580c;
+
+  --success: #15803d;
+  --danger: #b91c1c;
+  --warning: #b45309;
+  --ring: #c2410c;
+
+  --radius: 10px;
+
+  /* Apple-style elevation tokens */
+  --shadow-xs: 0 1px 2px rgba(12, 12, 13, 0.04);
+  --shadow-sm: 0 1px 2px rgba(12, 12, 13, 0.04), 0 2px 6px rgba(12, 12, 13, 0.04);
+  --shadow-md: 0 2px 4px rgba(12, 12, 13, 0.04), 0 8px 24px rgba(12, 12, 13, 0.06);
+  --shadow-lg: 0 4px 12px rgba(12, 12, 13, 0.05), 0 20px 48px rgba(12, 12, 13, 0.08);
+  --shadow-glow: 0 8px 28px color-mix(in oklab, var(--primary) 22%, transparent);
+
+  /* Apple-style easing */
+  --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    /* Apple's tighter default tracking */
+    letter-spacing: -0.011em;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  /* Apple typography scale — display text gets tighter tracking */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.022em;
+    font-weight: 600;
+  }
+  h1 { letter-spacing: -0.028em; }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--primary) 35%, transparent);
+    color: var(--foreground);
+  }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 8px;
+    border: 2px solid var(--background);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--subtle);
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-family: inherit;
+    letter-spacing: inherit;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Hide number input spinners */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@utility tabular-nums-feat {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "ss01";
+}
+
+/* ===== Apple-flavored interaction utilities ===== */
+
+@utility press {
+  transition: transform 200ms var(--ease-spring), background-color 180ms var(--ease-out-quart),
+    box-shadow 200ms var(--ease-out-quart), border-color 180ms var(--ease-out-quart),
+    color 180ms var(--ease-out-quart);
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+@utility lift {
+  transition: transform 280ms var(--ease-spring), box-shadow 280ms var(--ease-out-quart),
+    border-color 220ms var(--ease-out-quart);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-strong);
+  }
+}
+
+@keyframes hz-rise {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes hz-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes hz-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@utility animate-rise {
+  animation: hz-rise 520ms var(--ease-out-quart) both;
+}
+@utility animate-fade {
+  animation: hz-fade 420ms var(--ease-out-quart) both;
+}
+
+/* Stagger helpers */
+@utility delay-1 { animation-delay: 60ms; }
+@utility delay-2 { animation-delay: 120ms; }
+@utility delay-3 { animation-delay: 180ms; }
+@utility delay-4 { animation-delay: 240ms; }
+@utility delay-5 { animation-delay: 300ms; }
+@utility delay-6 { animation-delay: 360ms; }
+
+/* Focus ring — Apple-like soft halo */
+@utility focus-halo {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent);
+  border-color: var(--primary);
+}

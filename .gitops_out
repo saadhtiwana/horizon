@@ -1,0 +1,228 @@
+commit d661d797e5d54a556984cc23ece1341d82c207bd
+Author: saadhtiwana <saadhayat799@gmail.com>
+Date:   Mon May 4 22:59:53 2026 +0500
+
+    docs: polished README with demo image
+
+ create mode 100644 Desktop/Interview/horizon/README.md
+origin	https://github.com/saadhtiwana/Velocity.git (fetch)
+origin	https://github.com/saadhtiwana/Velocity.git (push)
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+## main...origin/main [ahead 1]
+ D ../../IS/Project/.gitignore
+ D ../../IS/Project/README.md
+ D ../../IS/Project/debug_sqli.py
+ D ../../IS/Project/requirements.txt
+ D ../../IS/Project/scanner.py
+ D ../../IS/Project/test_playwright.py
+ D ../../IS/Project/vulnerable_app.py
+ M README.md
+ D ../../Web/Velocity/.gitignore
+ D ../../Web/Velocity/Backend/.env.example
+ D ../../Web/Velocity/Backend/.gitignore
+ D ../../Web/Velocity/Backend/README.md
+ D ../../Web/Velocity/Backend/app/__init__.py
+ D ../../Web/Velocity/Backend/app/config.py
+ D ../../Web/Velocity/Backend/app/database.py
+ D ../../Web/Velocity/Backend/app/main.py
+ D ../../Web/Velocity/Backend/app/middleware/__init__.py
+ D ../../Web/Velocity/Backend/app/middleware/auth.py
+ D ../../Web/Velocity/Backend/app/models/__init__.py
+ D ../../Web/Velocity/Backend/app/models/booking.py
+ D ../../Web/Velocity/Backend/app/models/car.py
+ D ../../Web/Velocity/Backend/app/models/user.py
+ D ../../Web/Velocity/Backend/app/routers/__init__.py
+ D ../../Web/Velocity/Backend/app/routers/auth.py
+ D ../../Web/Velocity/Backend/app/routers/bookings.py
+ D ../../Web/Velocity/Backend/app/routers/cars.py
+ D ../../Web/Velocity/Backend/app/schemas/__init__.py
+ D ../../Web/Velocity/Backend/app/schemas/booking.py
+ D ../../Web/Velocity/Backend/app/schemas/car.py
+ D ../../Web/Velocity/Backend/app/schemas/user.py
+ D ../../Web/Velocity/Backend/app/utils/__init__.py
+ D ../../Web/Velocity/Backend/app/utils/auth.py
+ D ../../Web/Velocity/Backend/app/utils/imagekit.py
+ D ../../Web/Velocity/Backend/manual_test.py
+ D ../../Web/Velocity/Backend/pyproject.toml
+ D ../../Web/Velocity/Backend/requirements.txt
+ D ../../Web/Velocity/Backend/test_api.py
+ D ../../Web/Velocity/Backend/test_integration.py
+?? ../../../.VirtualBox/
+?? ../../../.android/
+?? ../../../.antigravity/
+?? ../../../.aws/
+?? ../../../.bash_history
+?? ../../../.cache/
+?? ../../../.chocolatey/
+?? ../../../.claude.json
+?? ../../../.claude.json.backup
+?? ../../../.claude/
+?? ../../../.codegpt/
+?? ../../../.codeium/
+?? ../../../.config/
+?? ../../../.copilot/
+?? ../../../.cursor/
+?? ../../../.docker/
+?? ../../../.eclipse/
+?? ../../../.expo/
+?? ../../../.gemini/
+?? ../../../.ghcp-appmod/
+?? ../../../.gitconfig
+?? ../../../.gradle/
+?? ../../../.h2.server.properties
+?? ../../../.idlerc/
+?? ../../../.ipynb_checkpoints/
+?? ../../../.ipython/
+?? ../../../.jdks/
+?? ../../../.jupyter/
+?? ../../../.keras-facenet/
+?? ../../../.keras/
+?? ../../../.lemminx/
+?? ../../../.lesshst
+?? ../../../.m2/
+?? ../../../.nbi/
+?? ../../../.node_repl_history
+?? ../../../.ollama/
+?? ../../../.p2/
+?? ../../../.packettracer
+?? ../../../.rustup/
+?? ../../../.ssh/
+?? ../../../.streamlit/
+?? ../../../.sts4/
+?? ../../../.vagrant.d/
+?? ../../../.viminfo
+?? ../../../.windsurf/
+?? ../../../.yarnrc
+?? "../../../3D Objects/"
+?? ../../../AndroidStudioProjects/
+?? ../../../AppData/
+?? "../../../Cisco Packet Tracer 8.2.2/"
+?? ../../../Contacts/
+?? ../../../DB-Project.sql
+?? ../../AccountStatement.pdf
+?? ../../Aloha.lnk
+?? ../../Backend/
+?? ../../CA/
+?? ../../COAL/
+?? ../../CV/
+?? ../../DSA/
+?? "../../Desktop - Shortcut.lnk"
+?? ../../Devops/
+?? "../../Docker Desktop.lnk"
+?? "../../Documents - Shortcut (2).lnk"
+?? "../../Documents - Shortcut.lnk"
+?? "../../Eclipse IDE for Java Developers - 2025-03.lnk"
+?? ../../FYP/
+?? ../../FarehBhai/
+?? "../../GitHub Desktop.lnk"
+?? ../../GitHubDesktopSetup-x64.exe
+?? ../../GitNew/
+?? ../../Golang/
+?? ../../Ingridio/
+?? .gitignore
+?? .gitops_out
+?? .prettierignore
+?? .prettierrc
+?? bun.lockb
+?? bunfig.toml
+?? components.json
+?? demo.jpg
+?? eslint.config.js
+?? package-lock.json
+?? package.json
+?? src/
+?? tsconfig.json
+?? vite.config.ts
+?? wrangler.jsonc
+?? ../../Kubewarden/
+?? ../../MAD/
+?? "../../MongoDB Compass.lnk"
+?? ../../PastPapers/
+?? ../../Rainmeter-4.5.23.exe
+?? ../../SEC/
+?? ../../ShadeCoder.lnk
+?? ../../SpringBoot/
+?? "../../Visual Studio Code.lnk"
+?? "../../WhatsApp Web.lnk"
+?? ../../Windsurf.lnk
+?? ../../WindsurfUserSetup-x64-1.11.2.exe
+?? ../../aloha_setup64.exe
+?? ../../ass.pdf
+?? ../../aws/
+?? ../../contributions/
+?? ../../desktop.ini
+?? ../../eclipse-inst-jre-win64.exe
+?? ../../github-recovery-codes.txt
+?? ../../go1.25.0.windows-amd64.msi
+?? "../../googlef0fea14df35c52ee (1).html"
+?? ../../launchd/
+?? ../../me'/
+?? ../../me.txt
+?? ../../me/
+?? ../../nen/
+?? ../../scraping/
+?? ../../~$Awais.docx
+?? ../../~$ass-Assignment-1.docx
+?? "../../~$hical theories.docx"
+?? "../../../Discrete Structures - Lecture 1.pptx"
+?? ../../../Documents/
+?? ../../../Downloads/
+?? ../../../Favorites/
+?? ../../../IntelGraphicsProfiles/
+?? ../../../Lab06.sql
+?? ../../../Lab07.sql
+?? ../../../Lab09.sql
+?? ../../../Links/
+?? ../../../Music/
+?? ../../../NTUSER.DAT
+?? ../../../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+?? ../../../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+?? ../../../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+?? ../../../NewLab.sql
+?? ../../../OneDrive/
+?? ../../../Pictures/
+?? "../../../Saved Games/"
+?? ../../../Searches/
+?? ../../../Task2.sql
+?? ../../../Task21.sql
+?? ../../../Untitled-1.py
+?? ../../../Untitled.ipynb
+?? ../../../Untitled1.ipynb
+?? ../../../Videos/
+?? "../../../VirtualBox VMs/"
+?? ../../../Viva.sql
+?? "../../../WPS Cloud Files/"
+?? ../../../activity1.sh
+?? ../../../activity2.sh
+?? ../../../activity3.sh
+?? ../../../battery-report.html
+?? ../../../child_exec
+?? ../../../child_exec.cpp
+?? ../../../data.txt
+?? ../../../eclipse-workspace/
+?? ../../../eclipse/
+?? ../../../error_report.txt
+?? ../../../go/
+?? ../../../ntuser.dat.LOG1
+?? ../../../ntuser.dat.LOG2
+?? ../../../ntuser.ini
+?? ../../../oslab10/
+?? ../../../peterson.sh
+?? ../../../projectLab/
+?? ../../../source/
+?? ../../../stats.txt
+?? ../../../task1.sh
+?? ../../../task2.sh
+?? ../../../task3.sh
+?? ../../../test
+?? ../../../test.cpp
+?? ../../../test.sql
